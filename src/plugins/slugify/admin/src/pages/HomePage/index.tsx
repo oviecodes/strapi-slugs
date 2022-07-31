@@ -29,10 +29,10 @@ const HomePage: React.VoidFunctionComponent = () => {
 
   const [contentTypeCount, setContentTypeCount] = useState(0);
   const [ contentTypes, setContentTypes ] = useState(Array<any>)
-  const [settings, setSettings] = useState({disabled:false})
+  // const [settings, setSettings] = useState({disabled:false})
   const [ disable, setDisabled ] = useState(false)
   const [ entries, setEntry ] = useState(contentTypes)
-  const [ option, setOption ] = useState([])
+  // const [ option, setOption ] = useState([])
   const [ loading, setLoading ] = useState(false)
 
   console.log(entries, 'all array')
@@ -61,13 +61,11 @@ const HomePage: React.VoidFunctionComponent = () => {
 
   return (
     <>
-     {/* <Suspense fallback={<LoadingIndicatorPage />}> */}
         <BaseHeaderLayout
           title="Slugify Plugin"
           subtitle="Click checkbox to allow slugs on Content Type"
           as="h2"
         />
-        {/* <LoadingIndicatorPage /> */}
 
         <ContentLayout>
           {loading == true && (
@@ -219,7 +217,6 @@ const HomePage: React.VoidFunctionComponent = () => {
             </Box>
           )}
         </ContentLayout>
-      {/* </Suspense> */}
     </>
   );
 };

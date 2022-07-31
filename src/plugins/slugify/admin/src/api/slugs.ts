@@ -1,4 +1,5 @@
 import axiosInstance from '../../src/utils/axiosInstance';
+
 const SERVER_HAS_NOT_BEEN_KILLED_MESSAGE = 'did-not-kill-server';
 const SERVER_HAS_BEEN_KILLED_MESSAGE = 'server is down';
 
