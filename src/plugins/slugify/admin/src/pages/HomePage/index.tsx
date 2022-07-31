@@ -47,17 +47,17 @@ const HomePage: React.VoidFunctionComponent = () => {
   }, [setContentTypeCount]);
 
   function fetchData() {
-      slugRequests.getContentTypes().then((res: any) => {
-        setContentTypeCount(res.data.length);
-        res.data.map((e: any) => {
-          e.slugEnabled = !!e.pluginOptions.slug
-          e.slugField = e.pluginOptions?.slug?.field
-          e.savable = false
-        })
-        setContentTypes(res.data)
-        setEntry(res.data)
-      });
-    };
+    slugRequests.getContentTypes().then((res: any) => {
+      setContentTypeCount(res.data.length);
+      res.data.map((e: any) => {
+        e.slugEnabled = !!e.pluginOptions.slug
+        e.slugField = e.pluginOptions?.slug?.field
+        e.savable = false
+      })
+      setContentTypes(res.data)
+      setEntry(res.data)
+    });
+  };
 
   return (
     <>
