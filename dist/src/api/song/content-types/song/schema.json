@@ -1,0 +1,30 @@
+{
+    "kind": "collectionType",
+    "collectionName": "songs",
+    "info": {
+        "singularName": "song",
+        "pluralName": "songs",
+        "displayName": "Song",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "slug": {
+            "type": "string",
+            "default": "title-slug",
+            "configurable": false
+        },
+        "title": {
+            "type": "string"
+        },
+        "artiste": {
+            "type": "string"
+        },
+        "genre": {
+            "type": "string"
+        }
+    }
+}

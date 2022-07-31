@@ -1,0 +1,26 @@
+
+{
+  "kind": "collectionType",
+  "collectionName": "slugs",
+  "info": {
+    "singularName": "slug",
+    "pluralName": "slugs",
+    "displayName": "slug"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "related": {
+      "type": "relation",
+      "relation": "morphToOne"
+    }
+  }
+}
